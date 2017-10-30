@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldWithTitleAndUnderline" customModule="eAccount" customModuleProvider="target">
+            <connections>
+                <outlet property="errorLabel" destination="Vqs-FY-u7b" id="YZY-nI-afy"/>
+                <outlet property="inputTextField" destination="86Y-RP-fvJ" id="G7f-oY-3hM"/>
+                <outlet property="titleLabel" destination="Vag-VO-LQ0" id="Yec-5c-Jwf"/>
+                <outlet property="underlineView" destination="GKf-9z-jUa" id="j0o-Lf-5iT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vag-VO-LQ0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86Y-RP-fvJ">
+                    <rect key="frame" x="0.0" y="19" width="414" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKf-9z-jUa">
+                    <rect key="frame" x="0.0" y="38" width="414" height="2"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="PdK-zd-ivL"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqs-FY-u7b">
+                    <rect key="frame" x="0.0" y="48" width="414" height="12"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vqs-FY-u7b" firstAttribute="leading" secondItem="GKf-9z-jUa" secondAttribute="leading" id="2ql-c0-N35"/>
+                <constraint firstItem="GKf-9z-jUa" firstAttribute="top" secondItem="86Y-RP-fvJ" secondAttribute="bottom" constant="4" id="4M2-3o-hvw"/>
+                <constraint firstAttribute="trailing" secondItem="86Y-RP-fvJ" secondAttribute="trailing" id="5pA-Hg-nVq"/>
+                <constraint firstItem="Vag-VO-LQ0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="61X-bC-TOJ"/>
+                <constraint firstItem="Vqs-FY-u7b" firstAttribute="trailing" secondItem="GKf-9z-jUa" secondAttribute="trailing" id="CiV-w9-bsR"/>
+                <constraint firstItem="86Y-RP-fvJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KjI-Ys-YnT"/>
+                <constraint firstItem="86Y-RP-fvJ" firstAttribute="top" secondItem="Vag-VO-LQ0" secondAttribute="bottom" constant="4" id="LOV-q2-uMv"/>
+                <constraint firstItem="Vag-VO-LQ0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dw3-5l-SZr"/>
+                <constraint firstItem="Vqs-FY-u7b" firstAttribute="top" secondItem="GKf-9z-jUa" secondAttribute="bottom" constant="8" id="iCN-VC-xg0"/>
+                <constraint firstAttribute="trailing" secondItem="GKf-9z-jUa" secondAttribute="trailing" id="mLZ-VA-T3o"/>
+                <constraint firstItem="GKf-9z-jUa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v43-0I-zbU"/>
+                <constraint firstAttribute="trailing" secondItem="Vag-VO-LQ0" secondAttribute="trailing" id="x9T-G0-qaH"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
